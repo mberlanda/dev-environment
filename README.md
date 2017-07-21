@@ -7,7 +7,7 @@ I have created a few scripts to setup a development environment.
 
 ### Configuration
 
-- add [.gitconfig](.gitconfig) to the home directory
+- add [.gitconfig](config/.gitconfig) to the home directory
 - Terminal > Preferences logged bash
 
 ### Scripts
