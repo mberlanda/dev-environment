@@ -2,7 +2,11 @@
 
 I have created a few scripts to setup a development environment.
 
+
 ## Instructions
+
 ```
-$ perl prepare_perl.pl && perl misc.pl && perl gitawareprompt.pl
+$ perl <script-name>
 ```
+
+- [prepare_perl.pl](prepare_perl.pl): this script contains the basics for working with perl
