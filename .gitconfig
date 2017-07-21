@@ -1,0 +1,14 @@
+[user]
+  name = name
+  email = email
+[core]
+  editor = subl
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  up = rebase
+  ci = commit
+  aa = add --all
+[push]
+  default = simple
