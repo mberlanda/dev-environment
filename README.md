@@ -19,7 +19,7 @@ $ perl -t -Ilib t/DevEnv-Util.t
 ### Scripts
 
 ```
-$ perl <script-name>
+$ perl -Ilib scripts/<script-name>
 ```
 
 - [prepare_perl.pl](scripts/prepare_perl.pl): `cpanminus` and basic Perl modules
