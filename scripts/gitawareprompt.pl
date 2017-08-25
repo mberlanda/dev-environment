@@ -19,9 +19,6 @@ my %GITAWAREPROMPT = (
   )]
 );
 
-my @packages = qw(git curl);
-install_packages(@packages);
-
 unless (-d $GITAWAREPROMPT{destination}) {
   my $folder = $GITAWAREPROMPT{folder};
   mkdir($folder) unless(-d $folder);
@@ -50,12 +47,4 @@ if ($to_config) {
   say "$bashrc updated."
 } else {
   say "$bashrc already up to date."
-}
-
-sub install_packages {
-  my @packages = @_;
-  say "Installing: " . join(', ', @packages);
-  `sudo apt update && sudo apt upgrade -y`;
-  my $install_cmd = "sudo apt install " . join(' ', @packages) . " -y";
-  `$install_cmd`;
 }
