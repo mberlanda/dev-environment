@@ -23,7 +23,7 @@ $ perl -Ilib scripts/<script-name>
 ```
 
 - [prepare_perl.pl](scripts/prepare_perl.pl): `cpanminus` and basic Perl modules
-- [misc.pl](scripts/misc.pl): `clipit`, `htop`, `vim`, `curl`, `git`
+- [misc.pl](scripts/misc.pl): `clipit`, `htop`, `vim`, `curl`, `git` by default, just add additional packages as arguments
 - [gitawareprompt.pl](scripts/gitawareprompt.pl): install `git-aware-prompt` and configure .bashrc
 - [haskell.pl](scripts/haskell.pl): install Haskell packages
 - [postgresql.pl](scripts/postgresql.pl): install and configure PostgreSQL (requires sudo and a db username as argument)
