@@ -5,6 +5,12 @@ I have created a few scripts to setup a development environment.
 
 ## Instructions
 
+### Run tests
+
+```
+$ perl -t -Ilib t/DevEnv-Util.t
+```
+
 ### Configuration
 
 - add [.gitconfig](config/.gitconfig) to the home directory
