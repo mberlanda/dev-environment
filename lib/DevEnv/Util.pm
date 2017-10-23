@@ -12,14 +12,14 @@ package DevEnv::Util {
   our $VERSION = '0.01';
 
   sub install_packages {
-    my ($self, @packages) = @_;
+    my @packages = @_;
     print "Installing: " . join(', ', @packages) . "\n";
     system apt_refresh_cmd();
     system apt_install_cmd(@packages);
   }
 
   sub install_modules {
-    my ($self, @modules) = @_;
+    my @modules = @_;
     system cpanm_install_cmd(@modules);
   }
 
@@ -28,7 +28,7 @@ package DevEnv::Util {
   }
 
   sub apt_install_cmd {
-    my ($self, @packages) = @_;
+    my @packages = @_;
     unless (@packages){
       die "apt_install_cmd() takes at leat one argument";
     }
@@ -36,7 +36,7 @@ package DevEnv::Util {
   }
 
   sub cpanm_install_cmd {
-    my ($self, @modules) = @_;
+    my @modules = @_;
     unless (@modules){
       die "cpanm_install_cmd() takes at leat one argument";
     }
