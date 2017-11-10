@@ -30,7 +30,7 @@ package DevEnv::Util {
   }
 
   sub apt_refresh_cmd {
-    "sudo apt update && sudo apt upgrade -y";
+    "sudo apt update && sudo apt upgrade -qy";
   }
 
   sub apt_install_cmd {

@@ -29,3 +29,4 @@ $ perl -Ilib scripts/<script-name>
 - [postgresql.pl](scripts/postgresql.pl): install and configure PostgreSQL (requires sudo and a db username as argument)
 - [sublime.pl](scripts/sublime.pl): install [Sublime Text Editor](https://www.sublimetext.com/docs/3/linux_repositories.html) for apt or yum ecosystems
 - [rvm.pl](scripts/rvm.pl): install latest [rvm](https://rvm.io/rvm/install) distro with `ruby` and `rails`
+- [rvm.pl](scripts/rvm_repair.pl): fix global installation for multi-user usage
